@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="xyz()">click here</button>
+    <script>
+        function xyz()
+        {
+            alert("no entry")
+        }
+    </script>
+    <pre>
+
+
+    </pre>
+    <button onclick="abc()">click here</button>
+    <script>
+        function abc()
+        {
+            var a;
+            if(confirm("welcome")){
+                a="user presssed ok";
+            }
+            else
+            {
+                a="user pressed cancel";
+            }
+            document.write(a)
+        }
+    </script>
+    <pre>
+
+    </pre>
+<button onclick="def()">click here</button>
+    <script>
+        function def()
+        {
+            var text;
+            var human=prompt("enter your name:","");
+            if(human==null||human=="")
+            {
+                text="user cancelled.";
+            }
+            else
+            {
+                text="hii "  + human + " glad to meet u";
+            }
+            document.write(text)
+        }
+    </script>
+</body>
+</html>
